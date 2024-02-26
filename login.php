@@ -13,7 +13,24 @@
     
     
 </head>
+
 <body>
+    <div class="full-height">
+    <center>
+<table>
+        <tr>
+                <td width="80%">
+                
+                    <font class="edoc-logo-sub">DBMS MINI PROJECT</font>
+                </td>
+                <td width="10%">
+                   <a href="index.html"  class="non-style-link"><p class="nav-item">HOME</p></a>
+                </td>
+               
+            </tr>
+        </table>
+</center>
+</div>
     <?php
 
     //learn from w3schools.com
@@ -119,6 +136,7 @@
 
 
     <center>
+        
     <div class="container">
         <table border="0" style="margin: 0;padding: 0;width: 60%;">
             <tr>
