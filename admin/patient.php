@@ -96,12 +96,22 @@
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                   
-                <td colspan="2" style="padding-top:30px;">
-                        <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">Add New Patient</p>
+                    <td width="65%">
+                        <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
+                            Today's Date
+                        </p>
+                        <p class="heading-sub12" style="padding: 0;margin: 0;">
+                            <?php 
+                        date_default_timezone_set('Asia/Kolkata');
+
+                        $date = date('Y-m-d');
+                        echo $date;
+                        ?>
+                        </p>
                     </td>
-                    <td colspan="2">
-                        <a href=" ../signup.php" class="non-style-link"><button  class="login-btn btn-primary btn button-icon"  style="display: flex;justify-content: center;align-items: center;margin-left:75px;background-image: url('../img/icons/add.svg');">Add New</font></button>
-                            </a></td>
+                    <td width="10%">
+                        <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
+                    </td>
 
 
                 </tr>
@@ -121,7 +131,12 @@
                     }else{
                         $sqlmain= "select * from patient order by pid desc";
 
-                    } ?>                 
+                    }
+
+
+
+                ?>
+                  
                 <tr>
                    <td colspan="4">
                        <center>
