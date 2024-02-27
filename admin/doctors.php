@@ -120,6 +120,9 @@
                         $sqlmain= "select * from doctor order by docid desc";
 
                     }
+
+
+
                 ?>
                   
                 <tr>

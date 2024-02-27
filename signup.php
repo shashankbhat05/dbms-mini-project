@@ -9,7 +9,35 @@
     <link rel="stylesheet" href="css/signup.css">
         
     <title>Sign Up</title>
-    
+    <style>
+
+        .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px 20px 20px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+   
+}
+
+.login{
+    padding:0px 10px 0px 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+    </style>
 </head>
 <body>
 <?php
@@ -53,7 +81,17 @@ if($_POST){
 
 ?>
 
+    <div class="home">
+    <div class="header">
+        <a class="logo" href="index.html">DBMS MINI PROJECT</a>
+        <div class="navba">
+            <a class="login" href="index.html">HOME</a>
+            
+        </div>
 
+
+    </div>
+    </div>
     <center>
     <div class="container">
         <table border="0">
