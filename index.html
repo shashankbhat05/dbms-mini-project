@@ -7,99 +7,64 @@
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/index.css">
-    <title>DBMS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-   
-    <title>Document</title>
+    <title>eDoc</title>
     <style>
-
-
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:20px 20px 0px 20px;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-   
-}
-
-
-.login , .signup{
-    padding:0px 10px 0px 10px;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-}
-
-.logo{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-}
-
-.main-content{
-    align-items: center;
-    justify-content: centerp;
-    display: flex;
-    flex-direction: column;
-    padding-top: 35vh;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 0;
-
-}
-
-.body-text{
-    font-weight: 700;
-    font-size: 30px;
-    
-}
-
-.reg{
-    background-color: #0A76D8;
-    border: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 15px;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-
-
-
-}
-
-.reg:hover{
-    box-shadow: rgba(7, 189, 240, 0.2) 0px 7px 29px 0px;
-    color: rgb(222, 215, 215);
-}
-
-
-
-
+        table{
+            animation: transitionIn-Y-bottom 0.5s;
+        }
     </style>
-
-    
+        
 </head>
 <body>
-    <div class="header">
-        <a class="logo" href="#">DBMS MINI PROJECT</a>
-        <div class="navba">
-            <a class="login" href="login.php">LOGIN</a>
-            <a class="signup" href="signup.php">SIGNUP</a>
-        </div>
-    </div>
-    <div class="main-content">
-        <p class="body-text">21CSL55</p>
-        <a class="reg" href="signup.php">Register Now</a>
+    
+    <div class="full-height">
+        <center>
+        <table border="0">
+            <tr>
+                <td width="80%">
+                    <font class="edoc-logo">eDoc. </font>
+                    <font class="edoc-logo-sub">| THE ECHANNELING PROJECT</font>
+                </td>
+                <td width="10%">
+                   <a href="login.php"  class="non-style-link"><p class="nav-item">LOGIN</p></a>
+                </td>
+                <td  width="10%">
+                    <a href="signup.php" class="non-style-link"><p class="nav-item" style="padding-right: 10px;">REGISTER</p></a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td  colspan="3">
+                    <p class="heading-text">Avoid Hassles & Delays.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="3">
+                    <p class="sub-text2">How is health today, Sounds like not good!<br>Don't worry. Find your doctor online Book as you wish with eDoc. <br>
+                    We offer you a free doctor channeling service, Make your appointment now.</p>
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="3">
+                    <center>
+                    <a href="login.php" >
+                        <input type="button" value="Make Appointment" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                    </a>
+                </center>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                   
+                </td>
+            </tr>
+        </table>
+        <p class="sub-text2 footer-hashen">A Web Solution by Hashen.</p>
+    </center>
+    
     </div>
 </body>
 </html>

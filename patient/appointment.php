@@ -120,7 +120,11 @@
                         <a href="appointment.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">My Bookings</p></a></div>
                     </td>
                 </tr>
-               
+                <tr class="menu-row" >
+                    <td class="menu-btn menu-icon-settings">
+                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
+                    </td>
+                </tr>
                 
             </table>
         </div>
@@ -173,7 +177,36 @@
                     </td>
                     
                 </tr>
-                
+                <tr>
+                    <td colspan="4" style="padding-top:0px;width: 100%;" >
+                        <center>
+                        <table class="filter-container" border="0" >
+                        <tr>
+                           <td width="10%">
+
+                           </td> 
+                        <td width="5%" style="text-align: center;">
+                        Date:
+                        </td>
+                        <td width="30%">
+                        <form action="" method="post">
+                            
+                            <input type="date" name="sheduledate" id="date" class="input-text filter-container-items" style="margin: 0;width: 95%;">
+
+                        </td>
+                        
+                    <td width="12%">
+                        <input type="submit"  name="filter" value=" Filter" class=" btn-primary-soft btn button-icon btn-filter"  style="padding: 15px; margin :0;width:100%">
+                        </form>
+                    </td>
+
+                    </tr>
+                            </table>
+
+                        </center>
+                    </td>
+                    
+                </tr>
                 
                
                   
@@ -262,7 +295,46 @@
                                         }
                                         echo "</tr>";
                            
-                              
+                                // for ( $x=0; $x<$result->num_rows;$x++){
+                                //     $row=$result->fetch_assoc();
+                                //     $appoid=$row["appoid"];
+                                //     $scheduleid=$row["scheduleid"];
+                                //     $title=$row["title"];
+                                //     $docname=$row["docname"];
+                                //     $scheduledate=$row["scheduledate"];
+                                //     $scheduletime=$row["scheduletime"];
+                                //     $pname=$row["pname"];
+                                //     
+                                //     
+                                //     echo '<tr >
+                                //         <td style="font-weight:600;"> &nbsp;'.
+                                        
+                                //         substr($pname,0,25)
+                                //         .'</td >
+                                //         <td style="text-align:center;font-size:23px;font-weight:500; color: var(--btnnicetext);">
+                                //         '.$apponum.'
+                                        
+                                //         </td>
+                                //         <td>
+                                //         '.substr($title,0,15).'
+                                //         </td>
+                                //         <td style="text-align:center;;">
+                                //             '.substr($scheduledate,0,10).' @'.substr($scheduletime,0,5).'
+                                //         </td>
+                                        
+                                //         <td style="text-align:center;">
+                                //             '.$appodate.'
+                                //         </td>
+
+                                //         <td>
+                                //         <div style="display:flex;justify-content: center;">
+                                        
+                                //         <!--<a href="?action=view&id='.$appoid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                //        &nbsp;&nbsp;&nbsp;-->
+                                //        <a href="?action=drop&id='.$appoid.'&name='.$pname.'&session='.$title.'&apponum='.$apponum.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-delete"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Cancel</font></button></a>
+                                //        &nbsp;&nbsp;&nbsp;</div>
+                                //         </td>
+                                //     </tr>';
                                     
                                 }
                             }

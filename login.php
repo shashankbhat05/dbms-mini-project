@@ -10,37 +10,6 @@
         
     <title>Login</title>
 
-    <style>
-
-.headerab{
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-top: -10px;
-text-decoration: none;
-font-family: "Roboto", sans-serif;
-margin: 0;
-
-
-}
-
-.loginab{
-padding:0px 10px 0px 10px;
-font-size: 20px;
-color: black;
-text-decoration: none;
-font-family: "Roboto", sans-serif;
-}
-
-.logoab{
-font-size: 20px;
-color: black;
-text-decoration: none;
-font-family: "Roboto", sans-serif;
-font-weight: 700;
-}
-
-</style>
     
     
 </head>
@@ -148,15 +117,8 @@ font-weight: 700;
 
 
 
-<div class="home">
-   
-            <a class="loginab" href="index.html">HOME</a>
-            
-    </div>
 
     <center>
- 
-  
     <div class="container">
         <table border="0" style="margin: 0;padding: 0;width: 60%;">
             <tr>
