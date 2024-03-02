@@ -1,10 +1,13 @@
 
 body{
-    margin: 0;
-    background-color: #ffffff;
+    margin: 7%;
+    background-color: white;
+    
 }
 
-
+.full-height{
+    height:50px;
+}
 
 .container{
     width: 45%;

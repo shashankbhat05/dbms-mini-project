@@ -203,7 +203,7 @@
                         <td width="30%">
                         <select name="showonly" id="" class="box filter-container-items" style="width:90% ;height: 37px;margin: 0;" >
                                     <option value="" disabled selected hidden><?php echo $current   ?></option><br/>
-                                    <option value="my">My Patients Only</option><br/>
+                                    <option value="My">My Patients Only</option><br/>
                                     <option value="all">All Patients</option><br/>
                                     
 
@@ -238,7 +238,7 @@
                                 <th class="table-headin">
                                     
                                 
-                                    NIC
+                                Aadhar
                                     
                                 </th>
                                 <th class="table-headin">
@@ -405,7 +405,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
+                                    <label for="nic" class="form-label">Aadhar: </label>
                                 </td>
                             </tr>
                             <tr>

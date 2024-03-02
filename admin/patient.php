@@ -53,7 +53,7 @@
                                 </td>
                                 <td style="padding:0px;margin:0px;">
                                     <p class="profile-title">Administrator</p>
-                                    <p class="profile-subtitle">admin@edoc.com</p>
+                                    <p class="profile-subtitle">admin@gmail.com</p>
                                 </td>
                             </tr>
                             <tr>
@@ -121,6 +121,9 @@
                     <td colspan="4" style="padding-top:10px;">
                         <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">All Patients</p>
                     </td>
+                    <td colspan="2">
+                        <a href="?action=add&id=none&error=0" class="non-style-link"><button  class="login-btn btn-primary btn button-icon"  style="display: flex;justify-content: center;align-items: center;margin-left:75px;background-image: url('../img/icons/add.svg');">Add New</font></button>
+                            </a></td>
                     
                 </tr>
                 <?php
@@ -138,7 +141,7 @@
                 ?>
                   
                 <tr>
-                   <td colspan="4">
+                   <td colspan="8">
                        <center>
                         <div class="abc scroll">
                         <table width="93%" class="sub-table scrolldown"  style="border-spacing:0;">
@@ -153,7 +156,7 @@
                                 <th class="table-headin">
                                     
                                 
-                                    NIC
+                                Aadhar
                                     
                                 </th>
                                 <th class="table-headin">
@@ -320,7 +323,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
+                                    <label for="nic" class="form-label">Aadhar: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -352,7 +355,7 @@
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
-                                    <label for="name" class="form-label">Date of Birth: </label>
+                                    <label for="dob" class="form-label">Date of Birth: </label>
                                 </td>
                             </tr>
                             <tr>
@@ -378,6 +381,149 @@
             </div>
             </div>
             ';
+            if($action=='add'){
+                $error_1=$_GET["error"];
+                $errorlist= array(
+                    '1'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Already have an account for this Email address.</label>',
+                    '2'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Password Conformation Error! Reconform Password</label>',
+                    '3'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;"></label>',
+                    '4'=>"",
+                    '0'=>'',
+
+                );
+                if($error_1!='4'){
+                echo '
+            <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <center>
+                    
+                        <a class="close" href="patient.php">&times;</a> 
+                        <div style="display: flex;justify-content: center;">
+                        <div class="abc">
+                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                        <tr>
+                                <td class="label-td" colspan="2">'.
+                                    $errorlist[$error_1]
+                                .'</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">Add New Patient.</p><br><br>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <form action="add-newpatient.php" method="POST" class="add-new-form">
+                                <td class="label-td" colspan="2">
+                                    <label for="name" class="form-label">Name: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <input type="text" name="name" class="input-text" placeholder="Patient Name" required><br>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="Email" class="form-label">Email: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <input type="email" name="email" class="input-text" placeholder="Email Address" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="nic" class="form-label">Aadhar: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <input type="text" name="nic" class="input-text" placeholder="Aadhar Number" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="Tele" class="form-label">Telephone: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <input type="tel" name="Tele" class="input-text" placeholder="Telephone Number" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="date" class="form-label">Date of Birth: </label>
+                                    
+                                </td>
+                            </tr>
+
+                            <tr>
+                            <td class="label-td" colspan="2">
+                                <input type="date" name="date" class="input-text"  required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                <td class="label-td" colspan="2">
+                    <label for="address" class="form-label">Address: </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-td" colspan="2">
+                    <input type="text" name="address" class="input-text" placeholder="Address" required>
+                </td>
+            </tr>
+                          
+                           
+                            
+                
+                            <tr>
+                                <td colspan="2">
+                                    <input type="reset" value="Reset" class="login-btn btn-primary-soft btn" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                    <input type="submit" value="Add" class="login-btn btn-primary btn">
+                                </td>
+                
+                            </tr>
+                           
+                            </form>
+                            </tr>
+                        </table>
+                        </div>
+                        </div>
+                    </center>
+                    <br><br>
+            </div>
+            </div>
+            ';
+
+            }else{
+                echo '
+                    <div id="popup1" class="overlay">
+                            <div class="popup">
+                            <center>
+                            <br><br><br><br>
+                                <h2>New Record Added Successfully!</h2>
+                                <a class="close" href="patient.php">&times;</a>
+                                <div class="content">
+                                    
+                                    
+                                </div>
+                                <div style="display: flex;justify-content: center;">
+                                
+                                <a href="patient.php" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"><font class="tn-in-text">&nbsp;&nbsp;OK&nbsp;&nbsp;</font></button></a>
+
+                                </div>
+                                <br><br>
+                            </center>
+                    </div>
+                    </div>
+        ';
+            }
+        }
         
     };
 

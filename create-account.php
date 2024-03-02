@@ -98,7 +98,7 @@ if($_POST){
             <tr>
                 <td colspan="2">
                     <p class="header-text">Let's Get Started</p>
-                    <p class="sub-text">It's Okey, Now Create User Account.</p>
+                    <p class="sub-text">It's Okay, Now Create User Account.</p>
                 </td>
             </tr>
             <tr>

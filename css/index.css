@@ -4,13 +4,11 @@ body{
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-   
 }
 
 html, body {
     height: 100%;
     margin: 0;
-    display: none;
   }
   
 .full-height {
@@ -21,14 +19,6 @@ html, body {
 
 
 }
-
-.header .navbar
-{
-    display: flex;
-    text-decoration: none;
-}
-
-
 table{
     width: 100%;
     padding-top: 5px;
@@ -70,9 +60,7 @@ table{
 
 .edoc-logo-sub{
     color: rgba(255, 255, 255, 0.733);
-    font-size: 14px;
-    padding-left: 20px;
-    font-weight: bold;
+    font-size: 12px;
 
 }
 
@@ -83,9 +71,6 @@ table{
     font-size: 15px;
     font-weight: 500;
     animation: transitionIn-Y-over 0.5s;
-    
-    
-
 }
 
 .nav-item:hover{
@@ -100,5 +85,3 @@ table{
     font-size: 13px;
     animation: transitionIn-Y-over 0.5s;
 }
-
-

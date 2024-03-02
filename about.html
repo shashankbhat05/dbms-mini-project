@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Inter, sans-serif;
+            font-size:12px;
+            background-color: #f2f2f2;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #272727;
+            text-align: right;
+        }
+        .navbar li {
+            float: left;
+        }
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 12px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            /* font-family: inherit; */
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #272727;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+}
+        /* .dropdown:hover .dropdown-content:hover {
+            background-color: blue;
+} */
+
+        .navs {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .abcd:hover {
+            background-color: #0979e9;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+        .zxc:hover{
+            background-color: #0979e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="index.html"><font class="edoc-logo-sub">DBMS MINI PROJECT</font></a></li>
+            <div class="navs">
+                <li class="abcd">
+                    <div class="dropdown">
+                        <a href="" class="dropbtn"><font class="edoc-logo-sub">Login</font></a>
+                        <div class="dropdown-content">
+                            <a href="login.php" class="zxc"><font class="edoc-logo-sub">Admin</font></a>
+                            <a href="login.php" class="zxc"><font class="edoc-logo-sub">Doctor</font></a>
+                            <a href="login.php" class="zxc"><font class="edoc-logo-sub">Patient</font></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="abcd"><a href="signup.php"><font class="edoc-logo-sub">SignUp</font></a></li>
+                <li class="abcd"><a href="about.html"><font class="edoc-logo-sub">About Project</font></a></li>
+            </div>
+        </ul>
+    </div>
+    <h2>About Project</h2>
+    <p>We should edit this section to provide information about the project.</p>
+</body>
+</html>
