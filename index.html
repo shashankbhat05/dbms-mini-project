@@ -4,130 +4,297 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/animations.css">  
-    <link rel="stylesheet" href="css/main.css">  
-    <link rel="stylesheet" href="css/index.css">
-    <title>Clinic Management</title>
+    <title>CMS</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "css1/normalize.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css1/main.css">
     <style>
-      
-
-        table{
-            animation: transitionIn-Y-bottom 0.5s;
+         body {
+            margin: 0;
+            padding: 0;
+            /* font-family: Inter, sans-serif; */
+            /* font-weight:100; */
+            font-size:12px;
+            background-color: #f2f2f2;
         }
-        ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #272727;
-        text-align: right;
-        
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #272727;
+            text-align: right;
+            position:fixed;
+            top: 0;
+            width: 100%;
+            
         }
-
-        li {
-        float: left;
+        .navbar li {
+            float: left;
+            
         }
-
-        li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
         .dropdown {
-  float: left;
-  overflow: hidden;
-}
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #272727;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropdown-content:hover {
-  background-color: #272727;
-}
-.navs{
-        display: flex;
-        justify-content: flex-end;
-        
-}
-.abcd :hover{
-    background-color: #0979e9;
-}
+            float: left;
+            overflow: hidden;
+            position: relative;
+            /* display: inline-block;/ */
+        }
+        .dropdown .dropbtn {
+            font-size: 12px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            /* background-color: inherit; */
+            /* font-family: inherit; */
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #272727;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            top: 100%;
+            left: 0;
+            z-index: 2;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropdown-content:hover {
+            background-color: #272727;
+        }
+        .navs {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .abcd:hover {
+            background-color: #0979e9;
+        }
+        .zxc:hover{
+            background-color: #0979e9;
+        }
     </style>
-        
 </head>
 <body>
-    <div class="navbar"><ul>
-        <div class="logoo">
+    <div class="navbar">
+        <ul>
             <li><a class="active" href="index.html"><font class="edoc-logo-sub">DBMS MINI PROJECT</font></a></li>
-        </div>
-        <div class="navs">
-        <li class="abcd"><div class="dropdown">
-            <a href=""class="dropbtn"><font class="edoc-logo-sub">Login</font></a>
-            <div class="dropdown-content">
-              <a href="login.php"><font class="edoc-logo-sub">Admin</font></a>
-              <a href="login.php"><font class="edoc-logo-sub">Doctor</font></a>
-              <a href="login.php"><font class="edoc-logo-sub">Patient</font></a>
-            </div></li>
-        <li class="abcd"><a href="signup.php"><font class="edoc-logo-sub">SignUp</font></a></li>
-        <li class="abcd"><a href="about.html"><font class="edoc-logo-sub">About Project</font></a></li>
-    </div>  
-    </ul>
-      </div>
-    <div class="full-height">
-        <center>
-        <table border="0">
-            
-            
-            <tr>
-                <td  colspan="3">
-                    <p class="heading-text">Clinic Management System</p>
-
-                </td>
-            </tr>
-            <tr>
-                <td  colspan="3">
-                    <p class="sub-text2">21CSL55</p>
-                </td>
-            </tr>
-            <tr>
-                
-                <td colspan="3">
-                    <center>
-                    <a href="login.php" >
-                        <input type="button" value="Make Appointment" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
-                    </a>
-                </center>
-                </td>
-                
-            </tr>
-            <tr>
-                <td colspan="3">
-                   
-                </td>
-            </tr>
-        </table>
-        
-    </center>
-    
+            <div class="navs">
+                <li class="abcd">
+                    <div class="dropdown">
+                        <a href="login.php" class="dropbtn"><font class="edoc-logo-sub">Login</font></a>
+                        <div class="dropdown-content">
+                            <a href="login.php" class="zxc"><font class="edoc-logo-sub">Admin</font></a>
+                            <a href="login.php" class="zxc"><font class="edoc-logo-sub">Doctor</font></a>
+                            <a href="login.php" class="zxc"><font class="edoc-logo-sub">Patient</font></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="abcd"><a href="signup.php"><font class="edoc-logo-sub">SignUp</font></a></li>
+                <li class="abcd"><a href="about.html"><font class="edoc-logo-sub">About Project</font></a></li>
+            </div>
+        </ul>
     </div>
+
+        <!-- header -->
+        <header class = "header bg-blue">
+            
+    
+    
+            <div class = "header-inner text-white text-center">
+                <div class = "container grid">
+                    <div class = "header-inner-left">
+                        <h1>your most trusted<br> <span>health partner</span></h1>
+                        <p class = "lead">the best match services for you</p>
+                        <p class = "text text-md"></p>
+                        <div class = "btn-group">
+                            <a href = "#about" class = "btn btn-white">Learn More</a>
+                            <a href = "signup.php" class = "btn btn-light-blue">Sign In</a>
+                        </div>
+                    </div>
+                    <div class = "header-inner-right">
+                        <img src = "images/header.png">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+    
+
+    <main>
+        <!-- about section -->
+        <section id = "about" class = "about py">
+            <div class = "about-inner">
+                <div class = "container grid">
+                    <div class = "about-left text-center">
+                        <div class = "section-head">
+                            <h2>About Us</h2>
+                            <div class = "border-line"></div>
+                        </div>
+                        <p class = "text text-lg">A clinic management system (CMS) specializing in appointments and scheduling revolutionizes the patient experience by offering seamless booking and management processes. By providing a user-friendly interface for both staff and patients, it streamlines appointment scheduling, minimizing wait times and optimizing clinic resources. Patients can easily book appointments online, check availability, and receive automated reminders, reducing no-show rates and maximizing clinic efficiency. Staff members benefit from real-time scheduling updates, allowing for quick adjustments and improved resource allocation. With features like calendar integration and customizable scheduling rules, CMS platforms ensure appointments are efficiently managed, enabling clinics to provide timely and effective care while enhancing overall patient satisfaction.</p>
+                        
+                    </div>
+                    <div class = "about-right flex">
+                        <div class = "img">
+                            <img src = "images/about-img.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+
+        <!-- banner one -->
+        <section id = "banner-one" class = "banner-one text-center">
+            <div class = "container text-white">
+                <blockquote class = "lead"><i class = "fas fa-quote-left"></i> In the realm of healthcare, time is of the essence. A Clinic Management System optimizes time, allowing healthcare providers to focus on what truly matters - Patient Care.  <i class = "fas fa-quote-right"></i></blockquote>
+                <small class = "text text-sm">- Peter Drucker</small>
+            </div>
+        </section>
+        <!-- end of banner one -->
+
+        <!-- services section -->
+        <section id = "services" class = "services py">
+            <div class = "container">
+                <div class = "section-head text-center">
+                    <h2 class = "lead">At our clinic, we don't just provide services; we create experiences that inspire trust and confidence.</h2>
+                    <p class = "text text-lg">A perfect way to show your Clinic services</p>
+                    <div class = "line-art flex">
+                        <div></div>
+                        <img src = "images/4-dots.png">
+                        <div></div>
+                    </div>
+                </div>
+                <div class = "services-inner text-center grid">
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "images/service-icon-1.png">
+                        </div>
+                        <h3>Appointment Booking</h3>
+                        <p class = "text text-sm">Allow patients to easily book appointments online through a user-friendly interface, selecting preferred dates, times, and healthcare providers.</p>
+                    </article>
+
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "images/service-icon-2.png">
+                        </div>
+                        <h3>Appointment Scheduling</h3>
+                        <p class = "text text-sm">Provide clinic staff with tools to efficiently schedule and manage appointments, including the ability to view availability, assign appointments to specific providers, and make adjustments as needed.</p>
+                    </article>
+
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "images/service-icon-3.png">
+                        </div>
+                        <h3>Patient Registration</h3>
+                        <p class = "text text-sm">Streamline the patient registration process by capturing essential information such as name,phone number,mail address and many other information.</p>
+                    </article>
+
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "images/service-icon-4.png">
+                        </div>
+                        <h3>First Aid</h3>
+                        <p class = "text text-sm">Providing immediate care when every second counts.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- banner two section -->
+        
+
+      
+
+      
+
+        
+
+      
+    </main>
+
+    <!-- footer  -->
+    <footer id = "footer" class = "footer text-center">
+        <div class = "container">
+            <div class = "footer-inner text-white py grid">
+                <div class = "footer-item">
+                    <h3 class = "footer-head">about us</h3>
+                    <div class = "icon">
+                        
+                    </div>
+                    <p class = "text text-md">Efficient clinic management, redefining healthcare administration one click at a time</p>
+                    <address>
+                        Medic Clinic <br>
+                        No.157 1st main 9th cross<br>
+                        Banashankari 2nd stage,Bengaluru <br>
+                        India
+                    </address>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">tags</h3>
+                    <ul class = "tags-list flex">
+                        <li>medical care</li>
+                        <li>emergency</li>
+                        <li>appointment</li>
+                        <li>scheduling</li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Quick Links</h3>
+                    <ul>
+                        <li><a href = "#services" class = "text-white">Our Services</a></li>
+                        <li><a href = "#" class = "text-white">Privacy Policy</a></li>
+                        <li><a href = "index.html" class = "text-white">Appointment Schedule</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">make an appointment</h3>
+                    <p class = "text text-md">Make an apppointment using the sign in button in the first section of the page.</p>
+                    <ul class = "appointment-info">
+                        <li>8:00 AM - 11:00 AM</li>
+                        <li>2:00 PM - 05:00 PM</li>
+                        <li>8:00 PM - 11:00 PM</li>
+                        <li>
+                            <i class = "fas fa-envelope"></i>
+                            <span>clinic@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class = "fas fa-phone"></i>
+                            <span>+91 9387543756</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "footer-links">
+                <ul class = "flex">
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer  -->
+
+
+    <!-- custom js -->
+    <script src = "js1/script.js"></script>
 </body>
 </html>

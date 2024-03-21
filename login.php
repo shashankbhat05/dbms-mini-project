@@ -107,6 +107,7 @@ if($_POST){
 }
 
 ?>
+<!-- Nvabar css -->
     <style>
        
         body {
@@ -224,6 +225,7 @@ if($_POST){
     </style>
 </head>
 <body>
+    <!-- navbar -->
     <div class="navbar">
         <ul>
             <li><a class="active" href="index.html"><font class="edoc-logo-sub">DBMS MINI PROJECT</font></a></li>
@@ -231,11 +233,11 @@ if($_POST){
                 <li class="abcd">
                     <div class="dropdown">
                         <a href="" class="dropbtn"><font class="edoc-logo-sub">Login</font></a>
-                        <div class="dropdown-content">
+                        <!-- <div class="dropdown-content">
                             <a href="login.php" class="zxc"><font class="edoc-logo-sub">Admin</font></a>
                             <a href="login.php" class="zxc"><font class="edoc-logo-sub">Doctor</font></a>
                             <a href="login.php" class="zxc"><font class="edoc-logo-sub">Patient</font></a>
-                        </div>
+                        </div> -->
                     </div>
                 </li>
                 <li class="abcd"><a href="signup.php"><font class="edoc-logo-sub">SignUp</font></a></li>

@@ -170,12 +170,12 @@ if($_POST){
             <div class="navs">
                 <li class="abcd">
                     <div class="dropdown">
-                        <a href="" class="dropbtn"><font class="edoc-logo-sub">Login</font></a>
-                        <div class="dropdown-content">
+                        <a href="login.php" class="dropbtn"><font class="edoc-logo-sub">Login</font></a>
+                        <!-- <div class="dropdown-content">
                             <a href="login.php" class="zxc"><font class="edoc-logo-sub">Admin</font></a>
                             <a href="login.php" class="zxc"><font class="edoc-logo-sub">Doctor</font></a>
                             <a href="login.php" class="zxc"><font class="edoc-logo-sub">Patient</font></a>
-                        </div>
+                        </div> -->
                     </div>
                 </li>
                 <li class="abcd"><a href="signup.php"><font class="edoc-logo-sub">SignUp</font></a></li>
