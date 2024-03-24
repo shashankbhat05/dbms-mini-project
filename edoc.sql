@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `aemail` varchar(255) NOT NULL,
   `apassword` varchar(255) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `admin`
@@ -51,7 +51,7 @@ CREATE TABLE `appointment` (
   `apponum` int(3) DEFAULT NULL,
   `scheduleid` int(10) DEFAULT NULL,
   `appodate` date DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `appointment`
@@ -74,7 +74,7 @@ CREATE TABLE `doctor` (
   `docnic` varchar(15) DEFAULT NULL,
   `doctel` varchar(15) DEFAULT NULL,
   `specialties` int(2) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `doctor`
@@ -99,7 +99,7 @@ CREATE TABLE `patient` (
   `pnic` varchar(15) DEFAULT NULL,
   `pdob` date DEFAULT NULL,
   `ptel` varchar(15) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `patient`
@@ -121,7 +121,7 @@ CREATE TABLE `schedule` (
   `scheduledate` date DEFAULT NULL,
   `scheduletime` time DEFAULT NULL,
   `nop` int(4) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `schedule`
@@ -139,7 +139,7 @@ INSERT INTO `schedule` (`scheduleid`, `docid`, `title`, `scheduledate`, `schedul
 CREATE TABLE `specialties` (
   `id` int(2) NOT NULL,
   `sname` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `specialties`
@@ -167,7 +167,7 @@ INSERT INTO `specialties` (`id`, `sname`) VALUES
 CREATE TABLE `webuser` (
   `email` varchar(255) NOT NULL,
   `usertype` char(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `webuser`
